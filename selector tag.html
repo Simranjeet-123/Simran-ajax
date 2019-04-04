@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>selector tag jquery</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+          $(document).ready(function()
+          {
+              var para=$("p");
+              for(i=0;i<para.length;i++)
+              {
+                  alert("paragraph no:"+para[i].innerHTML);
+
+              }
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <p class="myClass">FIRST PARA</p><!-- TAG class-->
+            <p id="myID">SECOND PARA</p><!-- TAG id-->
+            <p> THIRD PARA</p><!-- TAG NAME-->
+
+        </div>
+    </body>
+
+
+</html>
